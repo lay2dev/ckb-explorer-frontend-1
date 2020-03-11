@@ -1,20 +1,7 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import 'default-passive-events'
 import Content from '../../components/Content'
-import {
-  getStatisticDifficultyHashRate,
-  getStatisticDifficultyUncleRate,
-  getStatisticAddressCount,
-  getStatisticCellCount,
-  getStatisticTransactionCount,
-  getStatisticTotalDaoDeposit,
-  getStatisticAddressBalanceRank,
-  getStatisticDifficulty,
-  getStatisticHashRate,
-  getStatisticUncleRate,
-} from '../../service/app/statisticsChart'
-import { useDispatch } from '../../contexts/providers'
 import i18n from '../../utils/i18n'
 import { ChartsPanel, ChartCardPanel } from './styled'
 
@@ -38,8 +25,6 @@ const ChartCard = ({ chartData }: { chartData: ChartData }) => {
 }
 
 export default () => {
-  const dispatch = useDispatch()
-
   const charts: ChartData[] = [
     {
       title: `${i18n.t('block.difficulty')} & ${i18n.t('block.hash_rate')}`,
@@ -88,23 +73,10 @@ export default () => {
     },
     {
       title: `${i18n.t('statistic.balance_ranking')}`,
-      chart: 'http://116.62.115.20:3030/path/balance_ranking.png',
+      chart: 'http://116.62.115.20:3030/path/address_balance_rank.png',
       path: '/charts/address-balance-rank',
     },
   ]
-
-  useEffect(() => {
-    getStatisticDifficultyHashRate(dispatch)
-    getStatisticDifficultyUncleRate(dispatch)
-    getStatisticDifficulty(dispatch)
-    getStatisticHashRate(dispatch)
-    getStatisticUncleRate(dispatch)
-    getStatisticAddressCount(dispatch)
-    getStatisticCellCount(dispatch)
-    getStatisticTransactionCount(dispatch)
-    getStatisticTotalDaoDeposit(dispatch)
-    getStatisticAddressBalanceRank(dispatch)
-  }, [dispatch])
 
   return (
     <Content>
