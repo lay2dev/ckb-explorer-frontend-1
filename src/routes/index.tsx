@@ -26,6 +26,7 @@ import AddressCountChart from '../pages/StatisticsChart/AddressCount'
 import TotalDaoDepositChart from '../pages/StatisticsChart/TotalDaoDeposit'
 import CellCountChart from '../pages/StatisticsChart/CellCount'
 import AddressBalanceRankChart from '../pages/StatisticsChart/AddressBalanceRank'
+import ImageChart from '../pages/StatisticsChart/ImageCharts'
 import HashRateChart from '../pages/StatisticsChart/HashRate'
 import UncleRateChart from '../pages/StatisticsChart/UncleRate'
 import { useDispatch, useAppState } from '../contexts/providers'
@@ -144,6 +145,12 @@ export const containers: CustomRouter.Route[] = [
     path: '/charts/address-balance-rank',
     exact: true,
     comp: AddressBalanceRankChart,
+  },
+  {
+    name: 'ImageChart',
+    path: '/charts/image-chart',
+    exact: true,
+    comp: ImageChart,
   },
   {
     name: 'SearchFail',

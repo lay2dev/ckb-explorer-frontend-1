@@ -86,6 +86,11 @@ export const ChartCardPanel = styled.div`
     border-radius: 0 0 6px 6px;
     box-shadow: 2px 2px 10px 0 rgb(43, 43, 43, 0.05);
     border: 1px solid #e2e2e2;
+
+    > img {
+      width: auto;
+      height: 230px;
+    }
   }
 `
 
