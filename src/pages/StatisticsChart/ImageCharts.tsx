@@ -28,52 +28,52 @@ export default () => {
   const charts: ChartData[] = [
     {
       title: `${i18n.t('block.difficulty')} & ${i18n.t('block.hash_rate')}`,
-      chart: 'http://116.62.115.20:3030/path/difficulty_hash_rate.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/difficulty_hash_rate.png',
       path: '/charts/difficulty-hash-rate',
     },
     {
       title: `${i18n.t('block.difficulty')} & ${i18n.t('block.uncle_rate')}`,
-      chart: 'http://116.62.115.20:3030/path/difficulty_uncle_rate.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/difficulty_uncle_rate.png',
       path: '/charts/difficulty-uncle-rate',
     },
     {
       title: `${i18n.t('block.difficulty')}`,
-      chart: 'http://116.62.115.20:3030/path/difficulty.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/difficulty.png',
       path: '/charts/difficulty',
     },
     {
       title: `${i18n.t('block.hash_rate')}`,
-      chart: 'http://116.62.115.20:3030/path/hash_rate.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/hash_rate.png',
       path: '/charts/hash-rate',
     },
     {
       title: `${i18n.t('block.uncle_rate')}`,
-      chart: 'http://116.62.115.20:3030/path/uncle_rate.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/uncle_rate.png',
       path: '/charts/uncle-rate',
     },
     {
       title: `${i18n.t('statistic.transaction_count')}`,
-      chart: 'http://116.62.115.20:3030/path/transaction_count.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/transaction_count.png',
       path: '/charts/transaction-count',
     },
     {
       title: `${i18n.t('statistic.address_count')}`,
-      chart: 'http://116.62.115.20:3030/path/address_count.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/address_count.png',
       path: '/charts/address-count',
     },
     {
       title: i18n.t('statistic.cell_count'),
-      chart: 'http://116.62.115.20:3030/path/cell_count.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/cell_count.png',
       path: '/charts/cell-count',
     },
     {
       title: `${i18n.t('statistic.total_dao_deposit')}`,
-      chart: 'http://116.62.115.20:3030/path/total_dao_deposit.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/total_dao_deposit.png',
       path: '/charts/total-dao-deposit',
     },
     {
       title: `${i18n.t('statistic.balance_ranking')}`,
-      chart: 'http://116.62.115.20:3030/path/address_balance_rank.png',
+      chart: 'http://yangyang.dev.nervos.tech/path/address_balance_rank.png',
       path: '/charts/address-balance-rank',
     },
   ]
